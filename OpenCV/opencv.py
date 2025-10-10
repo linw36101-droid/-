@@ -27,9 +27,10 @@ result = cv2.bitwise_and(img_bgr, img_bgr, mask=mask)
 os.makedirs("outputs", exist_ok=True)
 cv2.imwrite("outputs/result_pink.png", result)
 
-cv2.imshow("Mask", mask)
+
 cv2.imshow("Result", result)
-print("✅ 已保存结果到 outputs/result_pink.png")
+print("保存结果到outputs/result_pink.png")
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
